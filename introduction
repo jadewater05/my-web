@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+</head>
+<body>
+    <h1>郑洁 | 个人主页</h1>
+    <img src="avatar.jpg" alt="个人照片" width="300">
+    <p>上海外国语大学 商务英语专业</p>
+
+    <h2>个人介绍</h2>
+    <p>江苏常州人，就读于上海外国语大学商务英语专业。第一次接触html课程。</p>
+
+    <h2>兴趣爱好</h2>
+    <ul>
+        <li>热爱美食！热衷于寻找各地美味的食物，（未来或许业余会是一位美食博主呢？）</li>
+        <li>特别喜欢骑车，边骑边听音乐，特别舒服。</li>
+        <li>很喜欢打羽毛球，但技术一般，也找不到运动搭子。</li>
+        <li>喜欢看短视频，抖音、红果、bilibili</li>
+    </ul>
+
+    <h2>学习方向</h2>
+    <p>主攻商务英语、国际商务相关知识，同时学习HTML/CSS基础，备考语言相关证书，研究跨境商务方向。</p>
+
+    <h2>更多链接</h2>
+    <p>欢迎访问我的 <a href="https://github.com/" target="_blank">GitHub主页</a></p>
+
+    <p>© 2026 郑洁 个人主页</p>
+</body>
+</html>
