@@ -4,29 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人主页</title>
+    <style>
+        /* 盒模型全局设置，所有元素启用 border‑box，作业关键点 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #f7f9fc;
+            /* body的外边距 */
+            margin: 20px;
+        }
+
+        /* 大容器盒子：整个页面内容放在这个盒子里，盒模型示范 */
+        .container {
+            max-width: 800px;
+            /* margin：上下30px，左右auto实现水平居中（外边距） */
+            margin: 30px auto;
+            /* padding：盒子内部留白（内边距） */
+            padding: 30px;
+            /* border 边框 */
+            border: 1px solid #cad8e8;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: #ffff00;
+            background-color: lightblue;
+            /* 内边距 */
+            padding: 12px;
+            /* 外边距，和下方盒子拉开距离 */
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        img {
+            border-radius: 8px;
+            /* 图片盒子的外边距，图片下方留出空隙 */
+            margin-bottom: 12px;
+            width: 300px;
+        }
+
+        /* 每一个板块（个人介绍、兴趣爱好）作为独立盒子 */
+        .box-item {
+            /* 每个盒子的外边距：盒子和盒子之间距离 */
+            margin-top: 25px;
+            /* 盒子内部留白 */
+            padding: 15px;
+            /* 浅边框，体现盒模型 */
+            border: 1px solid #e2ebf5;
+            border-radius: 6px;
+        }
+
+        h2 {
+            color: #2c5c97;
+            border-bottom: 2px solid #b8d8f5;
+            padding-bottom: 6px;
+            margin-bottom:10px;
+        }
+
+        p, li {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        ul {
+            /* 列表左边缩进 */
+            padding-left: 22px;
+        }
+
+        a {
+            color:#2c5c97;
+        }
+        a:hover {
+            color:#f08080;
+        }
+
+        footer {
+            margin-top:30px;
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
-    <h1>郑洁 | 个人主页</h1>
-    <img src="avatar.jpg" alt="个人照片" width="300">
-    <p>上海外国语大学 商务英语专业</p>
+    <!-- 外层大盒子 container -->
+    <div class="container">
+        <h1>郑洁|个人主页 </h1>
+        <img src="avatar.jpg" alt="个人照片">
+        <p>上海外国语大学 商务英语专业</p>
 
-    <h2>个人介绍</h2>
-    <p>江苏常州人，就读于上海外国语大学商务英语专业。第一次接触html课程。</p>
+        <!-- 每一块内容使用div盒子，练习盒模型 -->
+        <div class="box-item">
+            <h2>个人介绍</h2>
+            <p>江苏常州人，就读于上海外国语大学商务英语专业。第一次接触html课程。</p>
+        </div>
 
-    <h2>兴趣爱好</h2>
-    <ul>
-        <li>热爱美食！热衷于寻找各地美味的食物，（未来或许业余会是一位美食博主呢？）</li>
-        <li>特别喜欢骑车，边骑边听音乐，特别舒服。</li>
-        <li>很喜欢打羽毛球，但技术一般，也找不到运动搭子。</li>
-        <li>喜欢看短视频，抖音、红果、bilibili</li>
-    </ul>
+        <div class="box-item">
+            <h2>兴趣爱好</h2>
+            <ul>
+                <li>热爱美食！热衷于寻找各地美味的食物，（未来或许业余会是一位美食博主呢？）</li>
+                <li>特别喜欢骑车，边骑边听音乐，特别舒服。</li>
+                <li>很喜欢打羽毛球，但技术一般，也找不到运动搭子。</li>
+                <li>喜欢看短视频，抖音、红果、bilibili</li>
+            </ul>
+        </div>
 
-    <h2>学习方向</h2>
-    <p>主攻商务英语、国际商务相关知识，同时学习HTML/CSS基础，备考语言相关证书，研究跨境商务方向。</p>
+        <div class="box-item">
+            <h2>学习方向</h2>
+            <p>主攻商务英语、国际商务相关知识，同时学习HTML/CSS基础，备考语言相关证书，研究跨境商务方向。</p>
+        </div>
 
-    <h2>更多链接</h2>
-    <p>欢迎访问我的 <a href="https://github.com/" target="_blank">GitHub主页</a></p>
+        <div class="box-item">
+            <h2>更多链接</h2>
+            <p>欢迎访问我的 <a href="https://github.com/" target="_blank">GitHub主页</a></p>
+        </div>
 
-    <p>© 2026 郑洁 个人主页</p>
+        <footer>
+            © 2026 郑洁 个人主页
+        </footer>
+    </div>
 </body>
 </html>
